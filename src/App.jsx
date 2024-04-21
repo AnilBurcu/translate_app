@@ -58,7 +58,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-zinc-900 h-screen text-white grid place-items-center">
+    <div className="bg-[rgb(24,24,24)] h-screen text-white grid place-items-center">
       <div className="w-[80vw] max-w-[1100px] flex flex-col justify-center">
         <h1 className="text-center text-4xl font-semibold">Translate</h1>
         {/* Ust kisim */}
@@ -73,7 +73,7 @@ const App = () => {
           />
           <button
             onClick={handleSwap}
-            className="rounded py-2 px-6 bg-zinc-700 text-white transition hover:ring-2 hover:bg-zinc-800"
+            className="rounded py-2 px-6 bg-yellow-500 text-white transition hover:ring-2 hover:bg-zinc-800"
           >
             Change
           </button>
@@ -100,7 +100,7 @@ const App = () => {
             <textarea
               value={translateState.answer}
               disabled
-              className="w-full min-h-[300px] max-h-[500px] p-[10px] text-[20px] rounded text-gray-300"
+              className="w-full min-h-[300px] bg-zinc-700 max-h-[500px] p-[10px] text-[20px] rounded text-gray-300"
             ></textarea>
             {translateState.isLoading && (
               <div class="loader absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
